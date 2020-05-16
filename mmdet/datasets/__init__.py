@@ -7,10 +7,10 @@ from .samplers import DistributedGroupSampler, DistributedSampler, GroupSampler
 from .voc import VOCDataset
 from .wider_face import WIDERFaceDataset
 from .xml_style import XMLDataset
-
+### ADDING YOUR DATASET
+from .my_dataset import MyDataset
 __all__ = [
     'CustomDataset', 'XMLDataset', 'CocoDataset', 'VOCDataset',
     'CityscapesDataset', 'GroupSampler', 'DistributedGroupSampler',
-    'DistributedSampler', 'build_dataloader', 'ConcatDataset', 'RepeatDataset',
-    'WIDERFaceDataset', 'DATASETS', 'PIPELINES', 'build_dataset'
-]
+    'build_dataloader', 'ConcatDataset', 'RepeatDataset', 'WIDERFaceDataset',
+    'DATASETS', 'build_dataset','MyDataset'] # Also Add in List
